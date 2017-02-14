@@ -8,6 +8,7 @@ RUN apk add --update \
     nodejs=6.7.0-r0 \
     dbus \
     udev \
+    openssh-client \
     openrc \
     bash \
     libstdc++
