@@ -13,6 +13,7 @@ Make the relevant changes to the docker file.
 Find the image and run it
 
 ``` docker images ```
+
 ``` docker run -i -t IMAGE_ID /bin/bash ```
 
 Check everything is as you expect
@@ -23,7 +24,7 @@ Commit your contianer changes
 
 ``` docker commit  -m "MESSAGE" CONTAINER_ID energizedwork/ci-runner:TAG_VERSION ```
 
-Push your changes to (docker hub)[https://hub.docker.com/r/energizedwork/ci-runner/tags/]
+Push your changes to [docker hub](https://hub.docker.com/r/energizedwork/ci-runner/tags/)
 
 ``` docker push energizedwork/ci-runner:TAG_VERSION ```   
 
