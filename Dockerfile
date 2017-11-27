@@ -3,6 +3,7 @@ FROM docker:17.09-dind
 RUN apk add --update \
     openjdk8=8.131.11-r2 \
     chromium=57.0.2987.133-r0 \
+    ttf-freefont \
     git \
     xvfb \
     dbus \
