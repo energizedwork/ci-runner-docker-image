@@ -1,4 +1,4 @@
-FROM docker:1.12.3-dind
+FROM docker:17.09-dind
 
 RUN apk add --update \
     openjdk8=8.111.14-r0 \
