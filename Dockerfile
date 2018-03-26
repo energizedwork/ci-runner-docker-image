@@ -1,8 +1,8 @@
-FROM docker:17.09-dind
+FROM docker:17.12-dind
 
 RUN apk add --update \
-    openjdk8=8.131.11-r2 \
-    chromium=57.0.2987.133-r0 \
+    openjdk8=8.151.12-r0 \
+    chromium=61.0.3163.100-r0 \
     ttf-freefont \
     git \
     xvfb \
@@ -31,7 +31,7 @@ RUN apk add --update \
 
 
 ENV NVM_DIR /usr/local/nvm
-RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
 ENV NODE_VERSION v8.9.1
 
